@@ -1,0 +1,16 @@
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\bin\Debug\net8.0\infrastracture.deps.json
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\bin\Debug\net8.0\infrastracture.dll
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\bin\Debug\net8.0\infrastracture.pdb
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\bin\Debug\net8.0\domain.dll
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\bin\Debug\net8.0\domain.pdb
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\obj\Debug\net8.0\infrastracture.csproj.AssemblyReference.cache
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\obj\Debug\net8.0\infrastracture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\obj\Debug\net8.0\infrastracture.AssemblyInfoInputs.cache
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\obj\Debug\net8.0\infrastracture.AssemblyInfo.cs
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\obj\Debug\net8.0\infrastracture.csproj.CoreCompileInputs.cache
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\obj\Debug\net8.0\infrastracture.sourcelink.json
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\obj\Debug\net8.0\infrastr.D841EDB7.Up2Date
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\obj\Debug\net8.0\infrastracture.dll
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\obj\Debug\net8.0\refint\infrastracture.dll
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\obj\Debug\net8.0\infrastracture.pdb
+C:\Users\kutluhan.yegit\Desktop\layer.sinpas.com.tr\infrastracture\obj\Debug\net8.0\ref\infrastracture.dll

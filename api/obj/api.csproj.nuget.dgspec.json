@@ -1,0 +1,292 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\api\\api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\api\\api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\api\\api.csproj",
+        "projectName": "api",
+        "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\api\\api.csproj",
+        "packagesPath": "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kutluhan.yegit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\application\\application.csproj": {
+                "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\application\\application.csproj"
+              },
+              "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\domain\\domain.csproj": {
+                "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\domain\\domain.csproj"
+              },
+              "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\infrastracture\\infrastracture.csproj": {
+                "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\infrastracture\\infrastracture.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.14, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\application\\application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\application\\application.csproj",
+        "projectName": "application",
+        "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\application\\application.csproj",
+        "packagesPath": "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kutluhan.yegit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\domain\\domain.csproj": {
+                "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\domain\\domain.csproj"
+              },
+              "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\infrastracture\\infrastracture.csproj": {
+                "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\infrastracture\\infrastracture.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\domain\\domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\domain\\domain.csproj",
+        "projectName": "domain",
+        "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\domain\\domain.csproj",
+        "packagesPath": "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kutluhan.yegit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\infrastracture\\infrastracture.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\infrastracture\\infrastracture.csproj",
+        "projectName": "infrastracture",
+        "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\infrastracture\\infrastracture.csproj",
+        "packagesPath": "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\infrastracture\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kutluhan.yegit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\domain\\domain.csproj": {
+                "projectPath": "C:\\Users\\kutluhan.yegit\\Desktop\\layer.sinpas.com.tr\\domain\\domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[23.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
