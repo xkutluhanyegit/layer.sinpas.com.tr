@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using infrastracture.externalservices.meyerapi.interfaces;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 namespace infrastracture.backgroundservice.interfaces
@@ -11,9 +13,11 @@ namespace infrastracture.backgroundservice.interfaces
     public class MeyerBackgroundService : BackgroundService
     {
         private readonly IConfiguration _configuration;
-        public MeyerBackgroundService(IConfiguration configuration)
+        private readonly IServiceProvider _serviceProvider;
+        public MeyerBackgroundService(IConfiguration configuration,IServiceProvider serviceProvider)
         {
             _configuration = configuration;
+            _serviceProvider = serviceProvider;
         }
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
@@ -21,6 +25,13 @@ namespace infrastracture.backgroundservice.interfaces
             {
                 try
                 {
+                    using (var scope = _serviceProvider.CreateScope()) 
+                    {
+
+                        var meyerSicilService = scope.ServiceProvider.GetRequiredService<IMeyerSetSicilService>();
+                        await meyerSicilService.MeyerSetSicilAsync();
+                    }
+
                     Process.Start(new ProcessStartInfo
                     {
                         FileName = "chrome",

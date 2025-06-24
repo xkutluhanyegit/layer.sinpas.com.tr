@@ -12,28 +12,20 @@ namespace api.Controllers
     [Route("api/[controller]")]
     public class meyer : ControllerBase
     {
-        private readonly IMeyerGetTokenService _meyerGetTokenService;
         private readonly IEmployeeService _employeeService;
-        private readonly IMeyerSetSicilService _meyerSetSicilService;
         
-        public meyer(IMeyerGetTokenService meyerGetTokenService,IEmployeeService employeeService,IMeyerSetSicilService meyerSetSicilService)
+        public meyer(IEmployeeService employeeService)
         {
-            _meyerGetTokenService = meyerGetTokenService;
             _employeeService = employeeService;
-            _meyerSetSicilService = meyerSetSicilService;
         }
+        
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var token = await _meyerGetTokenService.GetTokenAsync();
-            var employee = await _employeeService.GetAllEmployeeAsync();
-            var setSicil = await _meyerSetSicilService.MeyerSetSicilAsync();
-            if (employee.Success)
-            {
-                
-            }
             
-            return Ok(token);
+            var employee = await _employeeService.GetAllEmployeeAsync();
+            
+            return Ok();
         }
     }
 }

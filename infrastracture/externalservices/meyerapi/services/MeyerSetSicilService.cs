@@ -76,7 +76,9 @@ namespace infrastracture.externalservices.meyerapi.services
                     SicilNo = item.COMPANY_ID+"-"+item.EMP_NO,
                     DogumTarihi = item.DATE_OF_BIRTH,
                     Firma = item.COMPANY_ID,
-                    Cinsiyet = item.SEX,
+                    Cinsiyet = string.IsNullOrWhiteSpace(item.SEX)
+                    ? "0"
+                    : (item.SEX.ToLower() == "erkek" ? "1" : "2"),
                     Kangrubu = item.BLOOD_TYPE,
                     GirisTarih = item.DATE_OF_EMPLOYMENT,
                     CikisTarih = item.DATE_OF_LEAVING
