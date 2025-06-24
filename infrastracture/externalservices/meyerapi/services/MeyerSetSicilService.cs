@@ -20,6 +20,7 @@ namespace infrastracture.externalservices.meyerapi.services
         private readonly IConfiguration _configuration;
         private readonly IMeyerGetTokenService _meyerGetTokenService;
         private readonly IEmployeeRepository _employeeRepository;
+
         public MeyerSetSicilService(HttpClient httpClient,IConfiguration configuration,IMeyerGetTokenService meyerGetTokenService,IEmployeeRepository employeeRepository)
         {
             _httpClient = httpClient;
@@ -27,6 +28,7 @@ namespace infrastracture.externalservices.meyerapi.services
             _meyerGetTokenService = meyerGetTokenService;
             _employeeRepository = employeeRepository;
         }
+        
         public async Task<meyersetsicilresponse> MeyerSetSicilAsync()
         {
             var token_ = _meyerGetTokenService.GetTokenAsync().Result.successMessage;
@@ -89,7 +91,6 @@ namespace infrastracture.externalservices.meyerapi.services
 
             var json = JsonSerializer.Serialize(requestBody);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
-
             var response = _httpClient.PostAsync(url_, content).Result;
 
             if (!response.IsSuccessStatusCode)
@@ -98,14 +99,27 @@ namespace infrastracture.externalservices.meyerapi.services
                 throw new Exception($"Hata: {response.StatusCode} - {responseText}");
             }
 
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
             var responseContent = response.Content.ReadAsStringAsync().Result;
 
             
-            var responseData = JsonSerializer.Deserialize<meyersetsicilresponse>(responseContent);
-            
-            var setSicilResponse = JsonSerializer.Deserialize<meyersetsicilresponse>(responseContent);
+            var responseData = JsonSerializer.Deserialize<meyersetsicilresponse>(responseContent,options);
 
-            return await Task.FromResult(setSicilResponse);
+            /*
+            Serial Log kaydı yapılacak!
+            */
+
+            foreach (var item in responseData.PersonInfo)
+            {
+                var xx = item.SuccessMessage;
+            }
+            
+
+            return await Task.FromResult(responseData);
 
         }
     }

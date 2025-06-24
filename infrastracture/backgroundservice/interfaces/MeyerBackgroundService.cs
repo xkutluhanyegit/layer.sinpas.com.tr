@@ -25,6 +25,7 @@ namespace infrastracture.backgroundservice.interfaces
             {
                 try
                 {
+                    //Log kaydı atılacak, çalıştırıldı diye.
                     using (var scope = _serviceProvider.CreateScope()) 
                     {
 
@@ -41,7 +42,7 @@ namespace infrastracture.backgroundservice.interfaces
                 }
                 catch (System.Exception ex)
                 {
-                     // TODO
+                     //Log kaydı atılacak
                 }
                 var minutes = Convert.ToDouble(_configuration.GetSection("MeyerBackgroundService:Minutes").Value);
                 await Task.Delay(TimeSpan.FromMinutes(minutes), stoppingToken);
